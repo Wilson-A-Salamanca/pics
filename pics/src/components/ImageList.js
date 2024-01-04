@@ -1,4 +1,5 @@
 import ImageShow from './ImageShow'
+import './ImageList.css'
 
 function ImageList({images}) {
     const renderedImage = images.map((image) => {
@@ -6,7 +7,7 @@ function ImageList({images}) {
     });
 
     return (
-      <div>{renderedImage}</div>
+      <div className='image-list'>{renderedImage}</div>
     );
   }
   
